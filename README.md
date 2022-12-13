@@ -1,3 +1,5 @@
 ## Neuro_location
 
-_Task.pdf_ - описание задачи.
+_static/Task.pdf_ - описание задачи
+
+_static/worldcities.csv_ - датасет
