@@ -7,20 +7,20 @@ data['is_russia'][data['country'] == 'Russia'] = 1
 
 
 # Разибиение датасета
-# train (X_train, Y_train) - 80%
+# train (X_train, Y_train) - 70%
 # val (X_val, Y_val) - 10%
-# test (X_test, Y_test) - 10%
+# test (X_test, Y_test) - 20%
 
 X_train, X_tmp, Y_train, Y_tmp = train_test_split(data[['lat', 'lng']],
                                                   data['is_russia'],
-                                                  test_size=0.2,
+                                                  test_size=0.3,
                                                   random_state=42,
                                                   stratify=data['is_russia'])
 
 # test и val
 X_test, X_val, Y_test, Y_val = train_test_split(X_tmp[['lat', 'lng']],
                                                 Y_tmp,
-                                                test_size=0.5,
+                                                test_size=0.33,
                                                 random_state=42,
                                                 stratify=Y_tmp)
 
