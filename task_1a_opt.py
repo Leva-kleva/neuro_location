@@ -35,4 +35,4 @@ basic_model.fit(np.array(X_train), np.array(Y_train), epochs=40, validation_data
 
 # оценка модели
 pred = basic_model.predict(np.array(X_test))
-print(roc_auc_score(Y_test, pred))
+print(f"SCORE: {roc_auc_score(Y_test, pred)}")
