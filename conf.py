@@ -5,7 +5,7 @@ from keras import optimizers
 from keras.models import Sequential
 from keras.layers import Dense
 import tensorflow as tf
-from sklearn.metrics import roc_auc_score
+from sklearn.metrics import roc_auc_score, roc_curve, confusion_matrix
 
 
 path_to_data = "static/worldcities.csv"
